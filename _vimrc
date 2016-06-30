@@ -70,9 +70,6 @@
     set ignorecase  
     set smartcase  
       
-    "Hide MacVim toolbar by default  
-    set go-=T  
-      
     "Hard-wrap paragraphs of text  
     nnoremap <leader>q gqip  
       
