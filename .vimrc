@@ -1,5 +1,3 @@
-set rtp=C:/Users/George/vimfiles,C:/Users/George/vimfiles/after,C:/Program\ Files\ (x86)/Vim/vim74/vim.exe,C:/Program\ Files\ (x86)/Vim/vim74/vimfiles,C:/Program\ Files\ (x86)/Vim/vim74/vim.exe/vimfiles/after,C:\Program\ Files\ (x86)\Vim\vim74\doc
-set helpfile=C:/Program\ Files\ (x86)/Vim/vim74/doc/help.txt
 set ruler
 set nocompatible
 set number
