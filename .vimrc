@@ -2,7 +2,7 @@ set ruler
 set nocompatible
 set number
 set hlsearch 
-set ingorecase 
+set ignorecase 
 set smartcase
 set scrolloff=4 
 set showmatch 
@@ -24,5 +24,12 @@ filetype plugin indent on	"Use of the filetype plugins, auto completion and inde
 augroup mysettings
     au FileType python set cinwords=if,elif,else,for,while,try,except,finally,def,class
 augroup END
+map <C-n> :NERDTreeToggle<CR>
+call plug#begin('~/vimfiles/autoload')
+	Plug 'junegunn/vim-plug'
+	Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+call plug#end()
+nmap <space> :
+
 
 
