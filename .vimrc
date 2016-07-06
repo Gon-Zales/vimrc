@@ -4,7 +4,7 @@
 "set wildignore=*.o,*.obj,*.bak,*.exe,*.py[co],*.swp,*~,*.pyc,.svn
 set hlsearch 
 set ignorecase 
-set laststatus=2        " use 2 lines for the status bar
+set laststatus=2
 set lazyredraw
 set magic
 set matchpairs+=<:> 
@@ -27,13 +27,16 @@ set wildmenu            " completion with menu
 "///////////////////////////////
 map <C-n> :NERDTreeToggle<CR>
 nmap <space> :
+"///////////////////////////////
+"// Other
+"///////////////////////////////
+colorscheme solas
 syntax on
 filetype plugin indent on	"Use of the filetype plugins, auto completion and indentation support
 augroup mysettings
     au FileType python set cinwords=if,elif,else,for,while,try,except,finally,def,class
 augroup END
 call plug#begin('~/vimfiles/autoload')
-	Plug 'junegunn/vim-plug'
 	Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 call plug#end()
 
