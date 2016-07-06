@@ -2,6 +2,7 @@
 "// Options
 "///////////////////////////////
 "set wildignore=*.o,*.obj,*.bak,*.exe,*.py[co],*.swp,*~,*.pyc,.svn
+set autoread
 set hlsearch 
 set ignorecase 
 set laststatus=2
@@ -10,6 +11,7 @@ set magic
 set matchpairs+=<:> 
 set nobackup
 set nocompatible
+set noswapfile
 set number
 set ruler
 set scrolloff=4 
@@ -20,6 +22,7 @@ set smartcase
 set smartindent
 set smarttab
 set tabstop=4
+set updatetime=500
 set viminfo='20,\"500   " remember copy registers after quitting in the .viminfo file -- 20 jump links, regs up to 500 lines'
 set wildmenu            " completion with menu
 "///////////////////////////////
