@@ -3,8 +3,11 @@
 "///////////////////////////////
 "set wildignore=*.o,*.obj,*.bak,*.exe,*.py[co],*.swp,*~,*.pyc,.svn
 set autoread
+set cursorline
+set encoding=utf-8
 set hlsearch 
 set ignorecase 
+set keymap=russian-jcukenwin iminsert=0 imsearch=0 " more comfortable work with cyrillic. After <C-6> is pressed in insert mode vimanges mode from "Insert" to "Insert (lang)" after that cyrillic symbols will be inserted. After <Esc> all command will work fine.
 set laststatus=2
 set lazyredraw
 set magic
@@ -22,14 +25,20 @@ set smartcase
 set smartindent
 set smarttab
 set tabstop=4
+set termencoding=utf-8
 set updatetime=500
 set viminfo='20,\"500   " remember copy registers after quitting in the .viminfo file -- 20 jump links, regs up to 500 lines'
+set wildchar=<Tab>
+set wildcharm=<C-z>
 set wildmenu            " completion with menu
+set wildmode=full
 "///////////////////////////////
 "// Mappings
 "///////////////////////////////
 map <C-n> :NERDTreeToggle<CR>
+map <leader>-p "*p
 nmap <space> :
+nnoremap <F10> :b <C-Z>
 "///////////////////////////////
 "// Other
 "///////////////////////////////
