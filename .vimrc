@@ -3,6 +3,7 @@
 "///////////////////////////////
 "set wildignore=*.o,*.obj,*.bak,*.exe,*.py[co],*.swp,*~,*.pyc,.svn
 set autoread
+set columns=237 " maximize window
 set cursorline
 set encoding=utf-8
 set hlsearch 
@@ -10,6 +11,7 @@ set ignorecase
 set keymap=russian-jcukenwin iminsert=0 imsearch=0 " more comfortable work with cyrillic. After <C-6> is pressed in insert mode vimanges mode from "Insert" to "Insert (lang)" after that cyrillic symbols will be inserted. After <Esc> all command will work fine.
 set laststatus=2
 set lazyredraw
+set lines=78 " maximize window
 set magic
 set matchpairs+=<:> 
 set nobackup
@@ -44,6 +46,7 @@ nnoremap <F10> :b <C-Z>
 "///////////////////////////////
 colorscheme solas
 syntax on
+winpos 0 0 " maximize window
 filetype plugin indent on	"Use of the filetype plugins, auto completion and indentation support
 augroup mysettings
     au FileType python set cinwords=if,elif,else,for,while,try,except,finally,def,class
